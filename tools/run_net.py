@@ -20,6 +20,7 @@ def main():
     print("config files: {}".format(args.cfg_files))
     for path_to_config in args.cfg_files:
         cfg = load_config(args, path_to_config)
+        cfg.NUM_GPUS = 1
 
         # Perform training.
         if cfg.TRAIN.ENABLE:

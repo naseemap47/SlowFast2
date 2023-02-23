@@ -506,7 +506,7 @@ _C.SLOWFAST.FUSION_KERNEL_SZ = 5
 _C.DATA = CfgNode()
 
 # The path to the data directory.
-_C.DATA.PATH_TO_DATA_DIR = ""
+_C.DATA.PATH_TO_DATA_DIR = "./data/MyData"
 
 # The separator used between path and label.
 _C.DATA.PATH_LABEL_SEPARATOR = " "
@@ -575,7 +575,7 @@ _C.DATA.TARGET_FPS = 30
 _C.DATA.TRAIN_JITTER_FPS = 0.0
 
 # Decoding backend, options include `pyav` or `torchvision`
-_C.DATA.DECODING_BACKEND = "torchvision"
+_C.DATA.DECODING_BACKEND = "pyav"
 
 # if True, sample uniformly in [1 / max_scale, 1 / min_scale] and take a
 # reciprocal to get the scale. If False, take a uniform sample from
